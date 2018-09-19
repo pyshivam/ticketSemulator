@@ -47,13 +47,33 @@ def userLogin():
     username = input("Your username")
     password = input("password")
     for keys in users:
-        if users[keys]["username"] == username and users[keys]["password"] ==password:
+        if users[keys]["username"] == username and users[keys]["password"] == password:
             print("USer Found")
         else:
             print("User not found \n Make an account now!")
             addUser();
 
-userLogin()
+
+# userLogin()
+
+def deleteUser():
+    username = input("Your username")
+    password = input("password")
+    for keys in users:
+        if users[keys]["username"] == username and users[keys]["password"] == password:
+            print("USer Found")
+            stop = keys
+            print(stop)
+            del users[stop]
+            break
+deleteUser()
+print(users.items())
+deleteUser()
+print(users.items())
+
+
+
+
 # temp = []
 # for i in range(1,41):
 #     if i % 10 == 0:
