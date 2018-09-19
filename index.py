@@ -6,29 +6,41 @@ films = {
     "Stranger Things 3": [3, 10, 350],
 }
 
+
 users = {
-    "101": {
+
+    1: {
         "username": "admin",
         "password": "admin"
     },
-    "102": {
+   2: {
         "username": "varsha",
         "password": "varsha062"
     },
-    "103": {
+    3: {
         "username": "sakshi",
         "password": "memelover"
     },
-    "104": {
+    4: {
         "username": "jhanvi",
         "password": "pizzalover"
     },
-    "105": {
+    5: {
         "username": "aastha",
         "password": "asslover"
     },
-
 }
+
+print(users.items())
+def addUser():
+    i=6
+    users[i] = {}
+    users[i]["username"] = input("Enter username ")
+    users[i]["password"] = input("Enter password")
+
+addUser()
+
+
 
 
 # temp = []
