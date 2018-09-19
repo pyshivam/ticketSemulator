@@ -6,14 +6,13 @@ films = {
     "Stranger Things 3": [3, 10, 350],
 }
 
-
 users = {
 
     1: {
         "username": "admin",
         "password": "admin"
     },
-   2: {
+    2: {
         "username": "varsha",
         "password": "varsha062"
     },
@@ -32,17 +31,29 @@ users = {
 }
 
 print(users.items())
+
+
 def addUser():
-    i=6
+    i = 6
     users[i] = {}
     users[i]["username"] = input("Enter username ")
     users[i]["password"] = input("Enter password")
 
-addUser()
+
+# addUser()
 
 
+def userLogin():
+    username = input("Your username")
+    password = input("password")
+    for keys in users:
+        if users[keys]["username"] == username and users[keys]["password"] ==password:
+            print("USer Found")
+        else:
+            print("User not found \n Make an account now!")
+            addUser();
 
-
+userLogin()
 # temp = []
 # for i in range(1,41):
 #     if i % 10 == 0:
