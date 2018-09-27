@@ -1,5 +1,3 @@
-
-
 # First commit
 films = {
     "Race 3": [12, 25, 200],
@@ -69,12 +67,12 @@ def deleteUser():
             print(stop)
             del users[stop]
             break
+
+
 deleteUser()
 print(users.items())
 deleteUser()
 print(users.items())
-
-
 
 
 # temp = []
